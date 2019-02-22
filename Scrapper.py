@@ -33,5 +33,3 @@ def getWikipedia(title):
 
 def getDescription(title):
     return ''.join(getOxford(title)) + " " + ''.join(getWikipedia(title))
-
-getWikipedia("robot")
