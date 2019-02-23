@@ -16,7 +16,7 @@ def summarize(content):
     indexes = nlargest(int(summarize_length), sentence_ranks, key=sentence_ranks.get)
     final_sentences = [sentence_tokens[j] for j in sorted(indexes)]
     for sentence in final_sentences:            
-        result += re.sub(r" ?\([\s\S]*?\)", "", sentence) # delete parentheses
+        result += re.sub("[\(\[].*?[\)\]]", "", sentence) # delete parentheses and square bracket
     
     result = result.lstrip()
     return result
