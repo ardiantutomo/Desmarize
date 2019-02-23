@@ -6,7 +6,8 @@ def main():
     oxford = Summarizer.summarize(Scrapper.getOxford(query))
     wikipedia = Summarizer.summarize(Scrapper.getWikipedia(query))
     description = "".join(oxford) + " " + "".join(wikipedia)
-
+    if(description == " "):
+        print("Not Found!")
     print (description)
 
 main()
