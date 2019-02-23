@@ -11,6 +11,9 @@ This application scrape data from the internet and summarize it
 
 
 *References:*
+
 *https://towardsdatascience.com/write-a-simple-summarizer-in-python-e9ca6138a08e*
+
 *https://www.wikipedia.org/*
+
 *https://en.oxforddictionaries.com/*
